@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+
+- rule: Diga despedida sempre que o usuário disser despedida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Diga 'eu sou um bot' sempre que o usuário desafiar
+  steps:
+  - intent: desafio_bot
+  - action: utter_bot_mel

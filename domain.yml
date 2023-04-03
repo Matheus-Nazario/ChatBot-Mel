@@ -1,0 +1,37 @@
+version: "3.1"
+
+intents:
+  - saudar
+  - despedida
+  - afirmativa
+  - negar
+  - humor_otimo
+  - humor_infeliz
+  - desafio_bot
+
+responses:
+  utter_saudar:
+  - text: "Ei! Como vai você?"
+
+  utter_alegrar:
+  - text: "Aqui está algo para animá-lo:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_isso_ajudou:
+  - text: "Isso te ajudou?"
+
+  utter_feliz:
+  - text: "Ótimo, continue!"
+
+  utter_despedida:
+  - text: "Xau, até logo!"
+
+  utter_bot_mel:
+  - text: "Eu me chamo Mel, sou a sua assistente virtual, como posso te ajudar? "
+
+actions:
+  - action_session_start
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
